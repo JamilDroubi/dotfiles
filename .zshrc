@@ -291,5 +291,4 @@ ex ()
 
 [[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
 clear
-/* vmname */
 export TERM="xterm-256color"
