@@ -5,7 +5,7 @@
 #installation via script from github
 #export ZSH="/home/$USER/.oh-my-zsh"
 #installation via yay -S oh-my-zsh-git
-export ZSH=/usr/share/oh-my-zsh/
+export ZSH='/usr/home/jd/.oh-my-zsh/'
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -96,8 +96,8 @@ source $ZSH/oh-my-zsh.sh
 ####   ARCOLINUX SETTINGS   ####
 
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
+# source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 setopt GLOB_DOTS
 
 # If not running interactively, don't do anything
@@ -116,7 +116,7 @@ if [ -d "$HOME/.local/bin" ] ;
 fi
 
 #list
-alias ls='ls -xA --color=auto'
+alias ls='ls -CA --color=always'
 alias la='ls -a'
 alias ll='ls -la'
 alias l='ls'
@@ -129,9 +129,13 @@ alias udpate='sudo pacman -Syyu'
 alias upate='sudo pacman -Syyu'
 
 ## Colorize the grep command output for ease of use (good for log files)##
-alias grep='grep --color=auto'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
+alias grep='rg --color=always'
+alias egrep='egrep --color=always'
+alias fgrep='fgrep --color=always'
+
+## BSD stuff
+alias pkg='doas pkg'
+alias make='doas make'
 
 #readable output
 alias df='df -h'
@@ -291,4 +295,9 @@ ex ()
 
 [[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
 clear
+ghosts
 export TERM="xterm-256color"
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+export PATH='/home/jd/.local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:~/bin:~/.emacs.d/bin'
+
