@@ -1,5 +1,5 @@
 scriptencoding utf-8
-syntax on
+syntax enable
 
 set clipboard=unnamedplus
 set guicursor=
@@ -25,6 +25,7 @@ set laststatus=2
 set noshowmode
 set complete+=kspell
 set completeopt=menuone,longest
+set omnifunc=syntaxcomplete#Complete
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
@@ -54,7 +55,7 @@ let g:lightline = {
       \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
       \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
       \ },
-      \ 'separator': { 'left': "\u25e3", 'right': "\u25e2" },
+      \ 'separator': { 'left': "", 'right': "" },
       \ 'subseparator': { 'left': "", 'right': "" }
       \ }
 
@@ -77,7 +78,6 @@ let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 
 
-nnoremap <silent> <leader>u :UndotreeToggle<CR>
 
 nnoremap <silent> <leader>r :set relativenumber<CR>
 nnoremap <silent> <leader>t :set norelativenumber<CR>
@@ -102,18 +102,13 @@ nnoremap <silent> <leader>g :colorscheme gruvbox<CR>
 nnoremap <silent> <leader>c :colorscheme despacio<CR>
 nnoremap <silent> <leader>p :colorscheme pencil<CR>
 
-set conceallevel=0
-
 " Navigate the complete menu items like CTRL+n / CTRL+p would.
 inoremap <silent> <expr> <Down> pumvisible() ? "<C-n>" :"<Down>"
 inoremap <silent> <expr> <Up> pumvisible() ? "<C-p>" : "<Up>"
-
 " Select the complete menu item like CTRL+y would.
 inoremap <silent> <expr> <Right> pumvisible() ? "<C-y>" : "<Right>"
 inoremap <silent> <expr> <CR> pumvisible() ? "<C-y>" :"<CR>"
-
 " Cancel the complete menu item like CTRL+e would.
 inoremap <silent> <expr> <Left> pumvisible() ? "<C-e>" : "<Left>"
-
 
 

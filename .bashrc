@@ -710,7 +710,7 @@ bash_prompt() {
 
 	local TRIANGLE=$'\uE0B0'	
 
-	local SYMBOL=$'\u25e3'	
+	local SYMBOL=$'\uE0B0'	
 
 	local SEPARATOR_1=$SEPARATOR_FORMAT_1$TRIANGLE
 
@@ -819,5 +819,13 @@ export TERM='xterm-256color'
 export EDITOR='vim'
 export VISUAL='vim'
 
+cd $HOME
 #ghosts
 
+clear
+
+##########################################################
+# BSD STUFF
+
+alias pkg='doas pkg'
+zsh
