@@ -1,11 +1,14 @@
 # Set Resolution
-xrandr --output VGA-0 --mode 1128x752
+# xrandr --output VGA-0 --mode 1128x752
 
 # Set Wallpaper
 nitrogen --restore &
 
+# Compositor
+xcompmgr &
+
 # Systray and Xmobar
-xmobar &
+# xmobar &
 
 # Emacs Daemon
-emacs --daemon &
+# emacs --daemon &

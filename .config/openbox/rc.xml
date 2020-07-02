@@ -153,7 +153,8 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>20</top>
+    <!-- <top>20</top> -->
+    <top>0</top>
     <bottom>0</bottom>
     <left>0</left>
     <right>0</right>
@@ -354,7 +355,11 @@
           <enabled>true</enabled>
           <name>Dmenu</name>
         </startupnotify>
+<<<<<<< HEAD
         <command>dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'mononoki Nerd Font:bold:pixelsize=14'</command>
+=======
+        <command>dmenu_run -c -l 20</command>
+>>>>>>> 8a63444f5e13eb8fad0bb43feae97f57928e9409
       </action>
     </keybind>
 
@@ -362,13 +367,13 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Alacritty</name>
+          <name>ST</name>
         </startupnotify>
-        <command>alacritty</command>
+        <command>st</command>
       </action>
     </keybind>
 
-    <keybind key="W-j">
+    <keybind key="W-S-j">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>

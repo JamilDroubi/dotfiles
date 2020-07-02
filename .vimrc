@@ -1,5 +1,9 @@
 scriptencoding utf-8
+<<<<<<< HEAD
 syntax enable
+=======
+syntax on
+>>>>>>> 8a63444f5e13eb8fad0bb43feae97f57928e9409
 
 set clipboard=unnamedplus
 set guicursor=
@@ -25,7 +29,10 @@ set laststatus=2
 set noshowmode
 set complete+=kspell
 set completeopt=menuone,longest
+<<<<<<< HEAD
 set omnifunc=syntaxcomplete#Complete
+=======
+>>>>>>> 8a63444f5e13eb8fad0bb43feae97f57928e9409
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
@@ -55,7 +62,11 @@ let g:lightline = {
       \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
       \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
       \ },
+<<<<<<< HEAD
       \ 'separator': { 'left': "", 'right': "" },
+=======
+      \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
+>>>>>>> 8a63444f5e13eb8fad0bb43feae97f57928e9409
       \ 'subseparator': { 'left': "", 'right': "" }
       \ }
 
@@ -78,6 +89,10 @@ let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 
 
+<<<<<<< HEAD
+=======
+nnoremap <silent> <leader>u :UndotreeToggle<CR>
+>>>>>>> 8a63444f5e13eb8fad0bb43feae97f57928e9409
 
 nnoremap <silent> <leader>r :set relativenumber<CR>
 nnoremap <silent> <leader>t :set norelativenumber<CR>
@@ -102,13 +117,30 @@ nnoremap <silent> <leader>g :colorscheme gruvbox<CR>
 nnoremap <silent> <leader>c :colorscheme despacio<CR>
 nnoremap <silent> <leader>p :colorscheme pencil<CR>
 
+<<<<<<< HEAD
 " Navigate the complete menu items like CTRL+n / CTRL+p would.
 inoremap <silent> <expr> <Down> pumvisible() ? "<C-n>" :"<Down>"
 inoremap <silent> <expr> <Up> pumvisible() ? "<C-p>" : "<Up>"
 " Select the complete menu item like CTRL+y would.
 inoremap <silent> <expr> <Right> pumvisible() ? "<C-y>" : "<Right>"
 inoremap <silent> <expr> <CR> pumvisible() ? "<C-y>" :"<CR>"
+=======
+set conceallevel=0
+
+" Navigate the complete menu items like CTRL+n / CTRL+p would.
+inoremap <silent> <expr> <Down> pumvisible() ? "<C-n>" :"<Down>"
+inoremap <silent> <expr> <Up> pumvisible() ? "<C-p>" : "<Up>"
+
+" Select the complete menu item like CTRL+y would.
+inoremap <silent> <expr> <Right> pumvisible() ? "<C-y>" : "<Right>"
+inoremap <silent> <expr> <CR> pumvisible() ? "<C-y>" :"<CR>"
+
+>>>>>>> 8a63444f5e13eb8fad0bb43feae97f57928e9409
 " Cancel the complete menu item like CTRL+e would.
 inoremap <silent> <expr> <Left> pumvisible() ? "<C-e>" : "<Left>"
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8a63444f5e13eb8fad0bb43feae97f57928e9409
