@@ -87,8 +87,6 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-<<<<<<< HEAD
-=======
 alias ls='ls -CA --color=always'
 alias la='ls -a'
 alias ll='ls -la'
@@ -131,7 +129,6 @@ alias userlist="cut -d: -f1 /etc/passwd"
 #merge new settings
 alias merge="xrdb -merge ~/.Xresources"
 
->>>>>>> 8a63444f5e13eb8fad0bb43feae97f57928e9409
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
@@ -166,7 +163,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-<<<<<<< HEAD
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -875,7 +871,6 @@ clear
 
 alias pkg='doas pkg'
 zsh
-=======
 export PS1="\033[0;35m\u \w \$ \033[m"
 export TERM='xterm-256color'
 export EDITOR='vim'
@@ -884,4 +879,3 @@ export LANG="en_US.UTF-8"
 
 #ghosts
 
->>>>>>> 8a63444f5e13eb8fad0bb43feae97f57928e9409
