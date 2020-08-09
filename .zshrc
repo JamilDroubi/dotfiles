@@ -140,6 +140,7 @@ ex ()
 clear
 ## Environmental Variables
 export TERM='xterm-256color'
+export TERM='screen-256color'
 export EDITOR='vim'
 export VISUAL='vim'
 export LANG="en_US.UTF-8"
