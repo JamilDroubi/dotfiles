@@ -1,0 +1,5 @@
+[Default Applications]
+x-scheme-handler/http=userapp-Firefox-PEZSO0.desktop
+
+[Added Associations]
+x-scheme-handler/http=userapp-Firefox-PEZSO0.desktop;
