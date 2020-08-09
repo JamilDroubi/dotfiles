@@ -1,0 +1,13 @@
+{
+  "extensions": {
+    "%2Fusr%2Fhome%2Fjd": [
+      "jj",
+      ":q"
+    ]
+  },
+  "lists": {
+    "%2Fusr%2Fhome%2Fjd": [
+      "ex"
+    ]
+  }
+}

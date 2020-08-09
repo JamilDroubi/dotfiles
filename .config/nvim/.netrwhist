@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/usr/home/jd'
+let g:netrw_dirhist_8='/usr/home/jd/.local'
+let g:netrw_dirhist_7='/usr/home/jd/.local/share'
+let g:netrw_dirhist_6='/usr/home/jd/.local/share/nvim'
+let g:netrw_dirhist_5='/usr/home/jd/.local/share/nvim/site'
+let g:netrw_dirhist_4='/usr/home/jd/.local/share/nvim/site/pack'
+let g:netrw_dirhist_3='/usr/home/jd/.local/share/nvim/site/pack/plugs'
+let g:netrw_dirhist_2='/usr/home/jd/.local/share/nvim/site/pack/plugs/start'
+let g:netrw_dirhist_1='/usr/home/jd/dwm'
+let g:netrw_dirhist_0='/usr/home/jd'
