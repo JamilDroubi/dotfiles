@@ -9,5 +9,10 @@
     "%2Fusr%2Fhome%2Fjd": [
       "ex"
     ]
+  },
+  "commands": {
+    "%2Fusr%2Fhome%2Fjd%2Fc%2Fsnake": [
+      "clangd.u"
+    ]
   }
 }

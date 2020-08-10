@@ -20,6 +20,7 @@ set nowrap
 set ignorecase
 set noswapfile
 set nobackup
+set nowritebackup
 set undodir=~/.config/nvim/undodir
 set undofile
 set incsearch
@@ -27,15 +28,17 @@ set termguicolors
 set scrolloff=8
 set laststatus=2
 set noshowmode
-
-" set complete+=kspell
-" set completeopt=menuone,longest
-
-" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
-" delays and poor user experience.
 set updatetime=50
-highlight ColorColumn ctermbg=0 guibg=lightgrey
-set colorcolumn=100
+set timeoutlen=300
+
+set t_Co=256
+set showtabline=0
+set autoindent
+set cursorline
+set formatoptions-=cro
+set autochdir
+set splitright
+
 
 let g:lightline = {
       \ 'colorscheme': 'seoul256',
@@ -63,6 +66,9 @@ let g:lightline = {
       \ 'subseparator': { 'left': "", 'right': "" }
       \ }
 
+" Colors
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+set colorcolumn=100
 colorscheme pencil
 set background=dark
 let mapleader = " "
