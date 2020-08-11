@@ -20,4 +20,5 @@ git clone https://github.com/morhetz/gruvbox.git
 # FZF
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
-
+# You need fd to go FAST
+# doas pkg install fd-find

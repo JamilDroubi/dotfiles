@@ -47,11 +47,12 @@ alias tozsh    "sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 setenv	EDITOR	vim
 setenv	PAGER	less
 setenv	TERM	xterm-256color
-setenv  PATH    /home/jd/.local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:~/bin:~/.emacs.d/bin
+# setenv  PATH    /home/jd/.local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:~/bin:~/.emacs.d/bin
+setenv  PATH    /home/jd/.local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:~/bin:~/.emacs.d/bin:/home/jd/.fzf/bin
 
 if ($?prompt) then
 	# An interactive shell -- set some stuff up
-	set prompt = "%{\033[0;32m%}%N@%m:%~ %#%{\033[0m%} "
+	set prompt = "%{\033[1;32m%}➜ %{\033[1;36m%} %~%{\033[0m%} "
 	set promptchars = "%#"
 
 	set filec
@@ -62,6 +63,7 @@ if ($?prompt) then
 	set autoexpand
 	set autorehash
 	set mail = (/var/mail/$USER)
+    bindkey -c "^R" vimrun
 	if ( $?tcsh ) then
 		bindkey "^W" backward-delete-word
 		bindkey -k up history-search-backward
@@ -71,4 +73,3 @@ if ($?prompt) then
 endif
 
 clear
-ghosts
