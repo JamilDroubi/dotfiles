@@ -1,6 +1,3 @@
-" set runtimepath^=~/.vim runtimepath+=~/.vim/after
-" let &packpath = &runtimepath
-" source ~/.vimrc
 
 scriptencoding utf-8
 syntax enable
@@ -98,6 +95,8 @@ nnoremap qqq :wq!<CR>
 nnoremap qa :q!<CR>
 nnoremap <silent> <leader>s :w<CR>
 
+nnoremap <leader>cc :make
+
 " Haskell stuff
 let g:haskell_enable_quantification = 1   " to enable highlighting of `forall`
 let g:haskell_enable_recursivedo = 1      " to enable highlighting of `mdo` and `rec`
@@ -135,3 +134,4 @@ function! s:check_back_space() abort
     let col = col('.') - 1
     return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
+
