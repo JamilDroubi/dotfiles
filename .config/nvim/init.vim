@@ -24,7 +24,7 @@ set undodir=~/.config/nvim/undodir
 set undofile
 set incsearch
 set termguicolors
-set scrolloff=8
+set scrolloff=12
 set laststatus=2
 set updatetime=50
 set timeoutlen=300
