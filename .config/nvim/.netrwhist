@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/usr/home/jd/haskell'
 let g:netrw_dirhist_4='/usr/home/jd/.config/nvim'
 let g:netrw_dirhist_3='/usr/home/jd/.config'
 let g:netrw_dirhist_2='/usr/home/jd'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_9='/usr/home/jd/.oh-my-zsh/custom'
 let g:netrw_dirhist_8='/usr/home/jd/.oh-my-zsh'
 let g:netrw_dirhist_7='/usr/home/jd'
 let g:netrw_dirhist_6='/usr/home/jd/c'
-let g:netrw_dirhist_5='/usr/home/jd/c/qtest'

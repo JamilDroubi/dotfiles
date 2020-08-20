@@ -94,14 +94,43 @@ if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
 
-## Aliases
+##### ALIASES #####
+
+# colors
 alias ls='ls -CA --color=always'
-alias la='ls -a'
-alias wget="wget -c"
+alias la='ls -a  --color=always'
 alias grep='rg --color=always'
 alias egrep='egrep --color=always'
 alias fgrep='fgrep --color=always'
+alias exa='exa -aG --color=always --group-directories-first' # ls substitution
+
+# basic stuff
+alias wget="wget -c"
 alias vim='nvim'
+alias st='st -f 'mononoki:pixelsize=19' &'
+alias doas="doas --"
+alias cp="cp -i"
+
+# navigation
+alias ..='cd ..' 
+alias ...='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../..'
+alias .5='cd ../../../..'
+alias .6='cd ../../../../..'
+
+# git
+alias addup='git add -u'
+alias addall='git add .'
+alias branch='git branch'
+alias checkout='git checkout'
+alias commit='git commit -m'
+alias fetch='git fetch'
+alias pull='git pull origin'
+alias push='git push origin'
+alias status='git status'
+alias tag='git tag'
+alias newtag='git tag -a'
 
 ## BSD stuff
 alias pkg='doas pkg'
