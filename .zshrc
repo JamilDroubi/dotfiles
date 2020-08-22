@@ -103,6 +103,7 @@ alias grep='rg --color=always'
 alias egrep='egrep --color=always'
 alias fgrep='fgrep --color=always'
 alias exa='exa -aG --color=always --group-directories-first' # ls substitution
+alias lx='exa -aG --color=always --group-directories-first'
 
 # basic stuff
 alias wget="wget -c"
@@ -175,6 +176,6 @@ export TERM='screen-256color'
 export EDITOR='vim'
 export VISUAL='vim'
 export LANG="en_US.UTF-8"
-export PATH='/home/jd/.local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:~/bin:~/.emacs.d/bin'
+export PATH='/home/jd/.local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:~/bin:~/.emacs.d/bin:~/.cabal/bin'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

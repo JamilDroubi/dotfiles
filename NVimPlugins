@@ -14,6 +14,7 @@ git clone https://github.com/tomtom/tcomment_vim.git
 # Colors
 git clone https://github.com/reedes/vim-colors-pencil.git
 git clone https://github.com/morhetz/gruvbox.git
+git clone https://github.com/neutaaaaan/iosvkem.git
 
 
 
