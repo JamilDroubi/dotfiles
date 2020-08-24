@@ -110,7 +110,7 @@ alias wget="wget -c"
 alias vim='nvim'
 alias st='st -f 'mononoki:pixelsize=19' &'
 alias doas="doas --"
-alias cp="cp -i"
+# alias cp="cp -i" # too fucking annoying
 
 # navigation
 alias ..='cd ..' 
@@ -121,17 +121,16 @@ alias .5='cd ../../../..'
 alias .6='cd ../../../../..'
 
 # git
-alias addup='git add -u'
-alias addall='git add .'
-alias branch='git branch'
-alias checkout='git checkout'
-alias commit='git commit -m'
-alias fetch='git fetch'
-alias pull='git pull origin'
-alias push='git push origin'
-alias status='git status'
-alias tag='git tag'
-alias newtag='git tag -a'
+alias g='git'
+alias ga='git add'
+alias gaa='git add --all'
+alias gc='git commit -v'
+alias gca='git commit -v -a'
+alias gl='git pull'
+alias gm='git merge'
+alias gp='git push'
+alias gpu='git push upstream'
+alias gpv='git push -v'
 
 ## BSD stuff
 alias pkg='doas pkg'
