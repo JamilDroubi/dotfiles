@@ -39,3 +39,16 @@ function! s:check_back_space() abort
     return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
+"  to move to {char}
+map  <silent><leader>/ <Plug>(easymotion-bd-f)
+nmap <silent><leader>/ <Plug>(easymotion-overwin-f)
+
+" Move to line
+map <silent><leader>L <Plug>(easymotion-bd-jk)
+nmap <silent><leader>L <Plug>(easymotion-overwin-line)
+
+" Move to word
+map  <silent><leader>w <Plug>(easymotion-bd-w)
+nmap <silent><leader>w <Plug>(easymotion-overwin-w)
+
+nnoremap <silent><leader><leader><leader> :source /home/jd/.config/nvim/init.vim<CR>

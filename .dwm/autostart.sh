@@ -11,11 +11,11 @@ xcompmgr &
 # Status Bar stuff
 dte() {
     dte="$(date +%T)"
-    echo -e "🕑 [$dte]"
+    echo -e "[$dte]"
 }
 unm() {
     unm="$(uname -or)"
-    echo -e "🖥 $unm"
+    echo -e "$unm"
 }
 while true; do
     xsetroot -name " $(unm) | $(dte)"

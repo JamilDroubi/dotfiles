@@ -6,11 +6,12 @@ mkdir -p ~/.local/share/nvim/site/pack/plugs/start
 mkdir -p ~/.config/nvim/undodir
 # Clone the plugins
 cd ~/.local/share/nvim/site/pack/plugs/start
-git clone https://github.com/neoclide/coc.nvim.git
+git clone https://github.com/neoclide/coc.nvim.git # Need nodejs
 git clone https://github.com/neovimhaskell/haskell-vim.git
 git clone https://github.com/itchyny/lightline.vim.git
 git clone https://github.com/preservim/nerdtree.git
 git clone https://github.com/tomtom/tcomment_vim.git
+git clone https://github.com/easymotion/vim-easymotion.git
 # Colors
 git clone https://github.com/reedes/vim-colors-pencil.git
 git clone https://github.com/morhetz/gruvbox.git
