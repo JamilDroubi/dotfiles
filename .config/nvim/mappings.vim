@@ -51,4 +51,9 @@ nmap <silent><leader>L <Plug>(easymotion-overwin-line)
 map  <silent><leader>w <Plug>(easymotion-bd-w)
 nmap <silent><leader>w <Plug>(easymotion-overwin-w)
 
+" Apply all my settings
 nnoremap <silent><leader><leader><leader> :source /home/jd/.config/nvim/init.vim<CR>
+
+" Conveniently delete words in insert mode
+" Good for notes
+inoremap  diw
